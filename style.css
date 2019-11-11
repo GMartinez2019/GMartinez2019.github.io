@@ -1,0 +1,68 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(101, 101, 128);
+    color: rgb(216, 176, 115);
+}
+p{
+    color: black;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        'header header header header'
+        'main-content image4 image1 main-content1'
+        'main-content2  image2 image3 main-content3' 
+        ;
+        grid-gap: 1rem;
+}
+ 
+.header{
+    grid-area: header;
+}
+.main-content{
+    grid-area: main-content;
+    padding-left: 20px;
+}
+.main-content1{
+    grid-area: main-content1;
+    text-align: left;
+    padding-bottom: 15px;
+    margin-left: 0%;
+    padding-right: 20px;
+}
+.main-content2{
+    grid-area: main-content2;
+    padding-left: 20px;
+}
+.main-content3{
+    grid-area: main-content3;
+    padding-right: 20px;
+}
+.image1{
+    grid-area: image1;
+    text-align: left;
+    padding-top: 50px;
+    margin: 0;
+}
+.image2{
+    grid-area: image2;
+    text-align: right;
+}
+ .image3{
+    grid-area: image3;
+    text-align: left;
+}
+.image4{
+    grid-area: image4;
+    text-align: right;
+    padding-top: 50px;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
